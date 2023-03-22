@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    min-height: 100vh;
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: heart360 2s linear infinite;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    
+}
+@keyframes heart360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+.subnav {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    animation: tobottom 2s linear infinite;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+@keyframes tobottom {
+    from {
+        top: 0;
+    }
+    to {
+        top: 100%;
+    }
+}
